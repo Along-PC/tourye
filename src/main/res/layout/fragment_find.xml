@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.design.widget.TabLayout
+        app:tabIndicatorColor="#CC1C24"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#CC1C24"
+        app:tabMaxWidth="0dp"
+        app:tabBackground="@android:color/transparent"
+        app:tabTextAppearance="@style/GameTextStyle"
+        app:tabTextColor="@color/color_font_black"
+        android:id="@+id/tab_fragment_find"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragment_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

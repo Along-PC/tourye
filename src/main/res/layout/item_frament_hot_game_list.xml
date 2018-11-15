@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/size_14"
+    android:paddingRight="@dimen/size_14"
+    android:layout_height="@dimen/size_110">
+    
+    <ImageView
+        android:id="@+id/img_item_fragment_hotgame_list"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_width="@dimen/size_140"
+        android:layout_height="@dimen/size_90" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:id="@+id/tv_item_hotgame_list_title"
+            android:text="MDC重走玄奘之路戈壁精英挑战赛"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/font_14"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginBottom="@dimen/size_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40" />
+        
+        <TextView
+            android:id="@+id/tv_item_hotgame_list_state"
+            android:text="报名已截止"
+            android:textSize="@dimen/font_14"
+            android:textColor="#999999"
+            android:layout_marginBottom="@dimen/size_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20" />
+
+        <TextView
+            android:id="@+id/tv_item_hotgame_list_price"
+            android:text="12800元"
+            android:textColor="#D0021B"
+            android:textSize="@dimen/font_14"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20" />
+
+    </LinearLayout>
+    
+
+</LinearLayout>

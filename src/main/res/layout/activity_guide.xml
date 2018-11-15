@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tourye.zhong.ui.activity.GuideActivity">
+
+    <ImageView
+        android:id="@+id/img_activity_guide"
+        android:background="@drawable/icon_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_activity_guide"
+        android:text="我知道了"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_60"
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/color_font_red"
+        android:gravity="center"
+        android:background="@drawable/shape_activity_guide"
+        android:layout_width="@dimen/size_110"
+        android:layout_height="@dimen/size_30" />
+
+</RelativeLayout>

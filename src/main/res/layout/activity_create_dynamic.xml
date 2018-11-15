@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/size_14"
+    android:paddingRight="@dimen/size_14"
+    android:paddingTop="@dimen/size_10"
+    android:orientation="vertical"
+    tools:context="com.tourye.zhong.ui.activity.CreateDynamicActivity">
+
+    <EditText
+        android:id="@+id/edt_activity_create_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_154"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:gravity="start"
+        android:maxLength="140"
+        android:hint="对于人际关系，我逐渐总结出了一个最合乎我的性情的原则，就是互相尊重，亲疏随缘。"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_14" />
+    <TextView
+        android:id="@+id/tv_activity_create_dynamic"
+        android:text="0/140"
+        android:textSize="@dimen/font_14"
+        android:textColor="#FFCCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_activity_create_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+</LinearLayout>

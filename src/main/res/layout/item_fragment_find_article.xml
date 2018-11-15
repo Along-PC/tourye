@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_find_article"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_103">
+    
+    <ImageView
+        android:id="@+id/img_find_article"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/size_14"
+        android:layout_width="@dimen/size_111"
+        android:layout_height="@dimen/size_83" />
+
+    <TextView
+        android:id="@+id/tv_find_article_title"
+        android:text="行走在敦煌，丝绸之路。我与敦煌的故事"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/img_find_article"
+        android:layout_marginRight="@dimen/size_14"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44" />
+
+    <TextView
+        android:id="@+id/tv_find_article_name"
+        android:text="----"
+        android:layout_marginTop="@dimen/size_4"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_below="@+id/tv_find_article_title"
+        android:layout_toRightOf="@+id/img_find_article"
+        android:layout_marginRight="@dimen/size_14"
+        android:layout_marginLeft="@dimen/size_10"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    
+
+</RelativeLayout>

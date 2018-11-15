@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_56">
+    
+    <ImageView
+        android:id="@+id/img_item_community_detail_thumb"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size_14"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36" />
+
+    <TextView
+        android:id="@+id/tv_item_community_detail_thumb"
+        android:layout_gravity="center_vertical"
+        android:text="郑殿畅"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

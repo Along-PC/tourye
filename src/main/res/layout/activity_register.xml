@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_activity_login"
+    android:background="@drawable/icon_login_back"
+    android:orientation="vertical"
+    tools:context="com.tourye.zhong.ui.activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_activity_login_casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_54"
+        android:text="随便逛逛"
+        android:visibility="invisible"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_14" />
+
+    <ImageView
+        android:layout_width="@dimen/size_186"
+        android:layout_height="@dimen/size_52"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@drawable/icon_login_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_30"
+        android:text="全球领先的户外徒步平台"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_14" />
+
+    <LinearLayout
+        android:id="@+id/ll_activity_login_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_47"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@drawable/shape_login_edt">
+
+        <TextView
+            android:id="@+id/tv_activity_login_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_weight="1"
+            android:text="中国大陆"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_activity_login_areacode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_20"
+            android:text="+86"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/font_14" />
+
+        <ImageView
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/size_20" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_activity_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_47"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@drawable/shape_login_edt"
+        android:hint="输入手机号"
+        android:inputType="number"
+        android:paddingLeft="@dimen/size_20"
+        android:paddingRight="@dimen/size_20"
+        android:textColor="@color/color_font_black"
+        android:textColorHint="@color/color_font_gray"
+        android:textSize="@dimen/font_14">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_47"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@drawable/shape_login_edt"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_activity_login_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_47"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:background="@null"
+            android:hint="动态密码"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20"
+            android:textColor="@color/color_font_black"
+            android:textColorHint="@color/color_font_gray"
+            android:textSize="@dimen/font_14">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_activity_login_get"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:text="获取动态密码"
+            android:gravity="center"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/font_14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_47"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@drawable/selector_login_bt"
+        android:gravity="center"
+        android:text="手机快捷登录"
+        android:textColor="@color/color_font_white"
+        android:textSize="@dimen/font_16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未收到？"
+            android:textColor="@color/color_font_gray"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_activity_login_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="试试语音获取"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/font_12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

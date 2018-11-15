@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/size_6"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_213">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150">
+                <ImageView
+                    android:id="@+id/img_item_fragment_signup"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_item_fragment_signup_count"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_marginLeft="@dimen/size_18"
+                    android:text="----人报名"
+                    android:textColor="@color/color_font_white"
+                    android:textSize="@dimen/font_12"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:background="@drawable/shape_fragment_signup_circle"
+                    android:layout_height="@dimen/size_20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_item_fragment_signup_title"
+                    android:text="敦煌戈壁108公里"
+                    android:layout_marginLeft="@dimen/size_14"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/color_font_black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_item_fragment_signup_action"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/color_font_black_lite"
+                    android:layout_marginLeft="@dimen/size_14"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:text="极端挑战/西北风光/朝圣之行"
+                    android:textSize="@dimen/font_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_item_fragment_signup_event"
+                    android:text="--场赛事"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_14"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/font_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

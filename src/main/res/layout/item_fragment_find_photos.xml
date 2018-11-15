@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_item_fragment_find_photos"
+        app:cardCornerRadius="@dimen/size_4"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_213">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_item_fragment_find_photos"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_14"
+                android:paddingRight="@dimen/size_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_item_fragment_find_photos_title"
+                    android:text="陶冶体育-全球领先的户外生活服务平台"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginBottom="@dimen/size_5"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_item_fragment_find_photos_count"
+                    android:text="137张"
+                    android:textColor="@color/color_font_black_lite"
+                    android:textSize="@dimen/font_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

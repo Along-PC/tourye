@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tourye.zhong.ui.activity.CreateArticleActivity">
+
+    <TextView
+        android:id="@+id/tv_create_article_intro"
+        android:text="请上传您的文章，审核通过则入驻投稿展示区"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/color_font_red"
+        android:layout_marginTop="@dimen/size_28"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/size_55"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_create_article_copy"
+        android:text="链接粘贴处："
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/color_font_black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_create_article_intro"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/size_11"
+        android:layout_height="wrap_content" />
+    
+    <EditText
+        android:id="@+id/edit_create_article_copy"
+        android:layout_below="@+id/tv_create_article_copy"
+        android:textColorHint="#FF999999"
+        android:hint="输入可用链接如：http：//"
+        android:gravity="center"
+        android:background="#FFEAEAEA"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/color_font_black"
+        android:layout_marginLeft="@dimen/size_14"
+        android:layout_marginRight="@dimen/size_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_41" />
+
+    <LinearLayout
+        android:layout_below="@+id/edit_create_article_copy"
+        android:layout_marginLeft="@dimen/size_14"
+        android:id="@+id/ll_activity_create_article_help"
+        android:layout_marginTop="@dimen/size_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/icon_doubt"
+            android:layout_width="@dimen/size_16"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/size_16" />
+        <TextView
+            android:text="@string/create_article_get_link"
+            android:textSize="@dimen/font_14"
+            android:layout_marginLeft="@dimen/size_10"
+            android:textColor="@color/color_font_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="@dimen/font_18"
+        android:text="提交"
+        android:gravity="center"
+        android:id="@+id/tv_activity_create_article_submit"
+        android:background="@drawable/shape_create_article_tv"
+        android:textColor="@color/color_font_white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_14"
+        android:layout_marginRight="@dimen/size_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_47" />
+
+
+</RelativeLayout>

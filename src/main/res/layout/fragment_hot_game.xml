@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_fragment_hot_game"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="@dimen/size_0">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <ImageView
+        android:background="@drawable/icon_logo_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_47" />
+
+
+
+</LinearLayout>

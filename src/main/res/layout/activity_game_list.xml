@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tourye.zhong.ui.activity.GameListActivity">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_activity_game_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="1px">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_250"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/img_game_list_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_120"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_mine_top_back"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_game_list"
+                        android:layout_width="@dimen/size_72"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/holder"
+                        android:layout_height="@dimen/size_72"
+                        android:layout_marginLeft="@dimen/size_14"
+                        android:layout_marginRight="@dimen/size_10"
+                        android:layout_marginTop="@dimen/size_105" />
+
+                    <TextView
+                        android:id="@+id/tv_game_list_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_125"
+                        android:layout_toRightOf="@+id/img_game_list"
+                        android:text="敦煌戈壁108公里"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/font_18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_game_list_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_game_list"
+                        android:layout_toLeftOf="@+id/tv_activity_game_list_understand"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="@dimen/size_14"
+                        android:layout_marginTop="@dimen/size_20"
+                        android:text="一生必走的九大路线"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_game_list_understand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/tv_activity_game_list_intro"
+                        android:layout_marginRight="@dimen/size_14"
+                        android:text="了解详情>"
+                        android:textColor="#FFCC1C24"
+                        android:textSize="@dimen/font_12" />
+
+                </RelativeLayout>
+
+                <!-- 设置标题-->
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_activity_game_list"
+                    style="@style/AppTheme.Toolbar"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:background="@android:color/transparent"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_back_activity_game_list"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp" />
+
+                        <android.support.v7.widget.ButtonBarLayout
+                            android:id="@+id/buttonBarLayout_activity_game_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/tv_title_activity_game_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="----"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </android.support.v7.widget.ButtonBarLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_date_activity_game_list"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_activity_game_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

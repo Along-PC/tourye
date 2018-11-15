@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_dialog_back"
+    android:layout_width="@dimen/size_248"
+    android:layout_height="@dimen/size_171">
+    
+    <ImageView
+        android:id="@+id/img_dialog_modify_close"
+        android:background="@drawable/icon_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size_21"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15" />
+    
+    <TextView
+        android:id="@+id/tv_dialog_modify_title"
+        android:gravity="center"
+        android:text="编辑用户昵称"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/font_15"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_21" />
+    
+    <EditText
+        android:id="@+id/edt_dialog_modify_name"
+        android:layout_below="@+id/tv_dialog_modify_title"
+        android:maxLines="1"
+        android:hint="不超过10个字"
+        android:textSize="@dimen/font_14"
+        android:paddingLeft="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/size_20"
+        android:background="@drawable/shape_dialog_modify_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/size_205"
+        android:layout_height="@dimen/size_40" />
+
+    <TextView
+        android:id="@+id/tv_dialog_modify_save"
+        android:layout_below="@+id/edt_dialog_modify_name"
+        android:layout_centerHorizontal="true"
+        android:text="保存"
+        android:background="@drawable/shape_dialog_modify_name_save"
+        android:textColor="@color/color_font_white"
+        android:textSize="@dimen/font_16"
+        android:gravity="center"
+        android:layout_width="@dimen/size_208"
+        android:layout_height="@dimen/size_40" />
+
+</RelativeLayout>
